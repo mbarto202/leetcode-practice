@@ -2,16 +2,16 @@
 
 let left = 0;
 
-for (let right = 0; right < arr.length; right++){
-    // expand the window
+for (let right = 0; right < arr.length; right++) {
+  // expand the window
 
-    while(window violates condition) {
-        // shrink window from left
+  while ("window violates condition") {
+    // shrink window from left
 
-        left++
-    }
+    left++;
+  }
 
-    // track max/min/etc..
+  // track max/min/etc..
 }
 
 /*  ------------------------------------------------------------
