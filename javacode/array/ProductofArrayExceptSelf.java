@@ -1,23 +1,22 @@
 /*
-Leetcode 121: Best Time to Buy and Sell Stock
+Leetcode 238: Product of Array Except Self
 
-You are given an array prices where prices[i] is the price of a stock on the i-th day.
+Given an integer array nums, return an array answer such that answer[i] is equal
+to the product of all elements of nums except nums[i].
 
-Your goal is to choose a single day to buy one stock and choose a later day
-to sell that stock in order to maximize your profit.
+The product of any prefix or suffix of nums is guaranteed to fit in a 32-bit integer.
 
-Return the maximum profit possible. If no profit can be made, return 0.
+You must write an algorithm that runs in O(n) time and does NOT use division.
 
 Example 1:
-Input: prices = [7,1,5,3,6,4]
-Output: 5
-Explanation: Buy at price 1 and sell at price 6.
+Input: nums = [1,2,3,4]
+Output: [24,12,8,6]
 
 Example 2:
-Input: prices = [7,6,4,3,1]
-Output: 0
-Explanation: No profitable transaction possible.
+Input: nums = [-1,1,0,-3,3]
+Output: [0,0,9,0,0]
 */
+
 
 package javacode.array;
 
