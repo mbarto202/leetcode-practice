@@ -18,3 +18,11 @@ Input: prices = [7,6,4,3,1]
 Output: 0
 Explanation: No profitable transaction possible.
 */
+
+package javacode.array;
+
+public class BestTimetoBuyandSellStock{
+    public static void Main(String[] args){
+
+    }
+}
