@@ -22,7 +22,27 @@ Explanation: No profitable transaction possible.
 package javacode.array;
 
 public class BestTimetoBuyandSellStock{
-    public static void Main(String[] args){
+    public static void main(String[] args){
+        int[] prices = {7,1,5,3,6,4};
+        int maxProfit = 0;
+        int buy = 0;
+        int sell = 0;
 
+        for(int i = 0; i < prices.length; i++){
+            for(int j = i + 1; j < prices.length; j++){
+                if(prices[j] - prices[i] > maxProfit){
+                    buy = prices[i];
+                    sell = prices[j];
+                  maxProfit = sell - buy;
+                }
+            }
+        }
+        if(maxProfit == 0){
+            System.out.println("No profitable transaction possible");
+        }
+        else{
+            System.out.println("Buy at price " + buy + " and sell at price " + sell);
+            System.out.println(maxProfit);
+        }
     }
 }
