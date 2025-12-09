@@ -21,5 +21,30 @@ Output: [0,0,9,0,0]
 package javacode.array;
 
 public class ProductofArrayExceptSelf {
-    
+    public static void main(String[] args){
+        int[] nums = {1,2,3,4};
+        int[] answer = new int[nums.length];
+        int prefix = 1;
+        int suffix = 1;
+
+        System.out.println("Prefix array");
+        for (int i = 0; i < nums.length; i++) {
+            answer[i] = prefix;
+            prefix *= nums[i];
+        }
+
+        for (int i = 0; i < nums.length; i++){
+            System.out.println(answer[i]);
+         }
+
+        System.out.println("Suffix/Final array");
+        for (int i = nums.length - 1; i >= 0; i--) {
+            answer[i] *= suffix;
+            suffix *= nums[i];
+        }
+
+        for (int i = 0; i < nums.length; i++){
+            System.out.println(answer[i]);
+         }
+    }
 }
